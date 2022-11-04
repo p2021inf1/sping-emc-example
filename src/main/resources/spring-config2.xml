@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+		http://www.springframework.org/schema/context 
+      	http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+      	    
+ 	<bean id="teacherList" class="com.emc.lists.TeacherList">
+ 		<property name="teachers">
+ 			<list>
+				<bean class="com.emc.lists.Teacher">
+					<property name="id" value="1" />
+					<property name="name" value="Bernat" />
+				</bean>
+				<bean class="com.emc.lists.Teacher">
+					<property name="id" value="2" />
+					<property name="name" value="Oriol" />
+				</bean>
+				<bean class="com.emc.lists.Teacher">
+					<property name="id" value="3" />
+					<property name="name" value="Pere" />
+				</bean>
+				<bean class="com.emc.lists.Teacher">
+					<property name="id" value="4" />
+					<property name="name" value="Jordi" />
+				</bean>
+				<bean class="com.emc.lists.Teacher">
+					<property name="id" value="5" />
+					<property name="name" value="Maria" />
+				</bean>
+			</list>
+ 		</property>
+ 
+    </bean>
+</beans>
